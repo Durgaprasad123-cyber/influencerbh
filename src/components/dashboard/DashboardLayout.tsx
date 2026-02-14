@@ -5,6 +5,7 @@ import { Home, Users, Bell, MessageSquare, UserCircle, Settings, LogOut, Search,
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { sampleNotifications } from '@/data/mockData';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const menuItems = [
   { icon: Home, label: 'Home', path: '/dashboard' },
@@ -29,122 +30,174 @@ export function DashboardLayout() {
   return (
     <div className="flex h-screen bg-background">
       {/* Sidebar */}
-      <aside className={`fixed inset-y-0 left-0 z-40 w-64 bg-sidebar transform transition-transform duration-300 lg:translate-x-0 ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
-        <div className="flex items-center gap-2 h-16 px-6 border-b border-sidebar-border">
-          <div className="w-8 h-8 rounded-lg gradient-bg flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-sm">IM</span>
+      <aside className={`fixed inset-y-0 left-0 z-40 w-72 bg-sidebar transform transition-all duration-500 lg:translate-x-0 ${sidebarOpen ? 'translate-x-0 shadow-2xl' : '-translate-x-full'}`}>
+        <div className="flex flex-col h-full">
+          <div className="flex items-center gap-3 h-20 px-8 border-b border-sidebar-border/50">
+            <motion.div 
+              whileHover={{ rotate: 5, scale: 1.05 }}
+              className="w-10 h-10 rounded-xl gradient-bg flex items-center justify-center shadow-lg shadow-primary/20"
+            >
+              <span className="text-white font-bold text-base">IM</span>
+            </motion.div>
+            <span className="font-display text-xl font-bold text-white tracking-tight">InfluMatch</span>
+            <button className="lg:hidden ml-auto text-white/70 hover:text-white transition-colors" onClick={() => setSidebarOpen(false)}>
+              <X className="w-6 h-6" />
+            </button>
           </div>
-          <span className="font-display text-lg font-bold text-sidebar-foreground">InfluMatch</span>
-          <button className="lg:hidden ml-auto text-sidebar-foreground" onClick={() => setSidebarOpen(false)}>
-            <X className="w-5 h-5" />
-          </button>
-        </div>
 
-        <nav className="p-4 space-y-1">
-          {menuItems.map(item => {
-            const active = location.pathname === item.path;
-            return (
-              <Link
-                key={item.path}
-                to={item.path}
-                onClick={() => setSidebarOpen(false)}
-                className={active ? 'sidebar-item-active' : 'sidebar-item'}
-              >
-                <item.icon className="w-5 h-5" />
-                <span className="text-sm font-medium">{item.label}</span>
-                {item.label === 'Notifications' && unreadNotifs > 0 && (
-                  <span className="ml-auto bg-destructive text-destructive-foreground text-xs px-2 py-0.5 rounded-full">{unreadNotifs}</span>
-                )}
-              </Link>
-            );
-          })}
-        </nav>
+          <nav className="flex-1 p-6 space-y-2 overflow-y-auto custom-scrollbar">
+            {menuItems.map((item, idx) => {
+              const active = location.pathname === item.path;
+              return (
+                <motion.div
+                  key={item.path}
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: idx * 0.05 }}
+                >
+                  <Link
+                    to={item.path}
+                    onClick={() => setSidebarOpen(false)}
+                    className={active ? 'sidebar-item-active' : 'sidebar-item'}
+                  >
+                    <item.icon className={`w-5 h-5 transition-transform duration-300 ${active ? 'scale-110' : 'group-hover:scale-110'}`} />
+                    <span className="text-[15px] font-semibold">{item.label}</span>
+                    {item.label === 'Notifications' && unreadNotifs > 0 && (
+                      <span className="ml-auto bg-white/20 text-white text-[10px] font-bold px-2 py-0.5 rounded-full backdrop-blur-md">
+                        {unreadNotifs}
+                      </span>
+                    )}
+                  </Link>
+                </motion.div>
+              );
+            })}
+          </nav>
 
-        <div className="absolute bottom-0 left-0 right-0 p-4 border-t border-sidebar-border">
-          <button onClick={handleLogout} className="sidebar-item w-full">
-            <LogOut className="w-5 h-5" />
-            <span className="text-sm font-medium">Sign Out</span>
-          </button>
+          <div className="p-6 border-t border-sidebar-border/50">
+            <button onClick={handleLogout} className="sidebar-item w-full hover:bg-destructive/10 hover:text-destructive group transition-all duration-300">
+              <LogOut className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              <span className="text-[15px] font-semibold">Sign Out</span>
+            </button>
+          </div>
         </div>
       </aside>
 
       {/* Overlay */}
-      {sidebarOpen && <div className="fixed inset-0 z-30 bg-foreground/20 lg:hidden" onClick={() => setSidebarOpen(false)} />}
+      <AnimatePresence>
+        {sidebarOpen && (
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-30 bg-black/40 backdrop-blur-sm lg:hidden" 
+            onClick={() => setSidebarOpen(false)} 
+          />
+        )}
+      </AnimatePresence>
 
       {/* Main content */}
-      <div className="flex-1 lg:ml-64 flex flex-col">
+      <div className="flex-1 lg:ml-72 flex flex-col min-w-0">
         {/* Top bar */}
-        <header className="h-16 border-b border-border bg-card flex items-center justify-between px-4 lg:px-6 sticky top-0 z-20">
-          <div className="flex items-center gap-4">
-            <button className="lg:hidden" onClick={() => setSidebarOpen(true)}>
-              <Menu className="w-5 h-5" />
+        <header className="h-20 border-b border-white/40 dark:border-border/40 bg-white/70 dark:bg-card/70 backdrop-blur-xl flex items-center justify-between px-6 lg:px-10 sticky top-0 z-20">
+          <div className="flex items-center gap-6 flex-1">
+            <button className="lg:hidden p-2 hover:bg-gray-100 dark:hover:bg-sidebar-accent rounded-xl transition-colors" onClick={() => setSidebarOpen(true)}>
+              <Menu className="w-6 h-6" />
             </button>
-            <div className="relative hidden sm:block">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-              <Input placeholder="Search influencers, campaigns..." className="pl-10 w-72 bg-muted/50 border-0" />
+            <div className="relative max-w-md w-full hidden sm:block group">
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4.5 h-4.5 text-muted-foreground group-focus-within:text-primary transition-colors" />
+              <Input 
+                placeholder="Search influencers, campaigns..." 
+                className="pl-12 h-11 w-full bg-gray-50/50 dark:bg-muted/20 border-gray-200/50 dark:border-border/50 focus:bg-white dark:focus:bg-card rounded-xl transition-all shadow-sm focus:shadow-md outline-none" 
+              />
             </div>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-5">
             {/* Notifications */}
             <div className="relative">
-              <button onClick={() => { setNotifDropdown(!notifDropdown); setProfileDropdown(false); }} className="relative p-2 rounded-lg hover:bg-muted transition-colors">
-                <Bell className="w-5 h-5 text-muted-foreground" />
+              <button 
+                onClick={() => { setNotifDropdown(!notifDropdown); setProfileDropdown(false); }} 
+                className={`relative p-2.5 rounded-xl transition-all duration-300 ${notifDropdown ? 'bg-primary/10 text-primary' : 'hover:bg-gray-100 dark:hover:bg-muted text-muted-foreground hover:text-foreground'}`}
+              >
+                <Bell className="w-5.5 h-5.5" />
                 {unreadNotifs > 0 && (
-                  <span className="absolute top-1 right-1 w-2 h-2 bg-destructive rounded-full" />
+                  <span className="absolute top-2 right-2 w-2 h-2 bg-destructive rounded-full ring-2 ring-white dark:ring-card" />
                 )}
               </button>
-              {notifDropdown && (
-                <div className="absolute right-0 top-12 w-80 bg-card border border-border rounded-xl shadow-xl z-50 animate-scale-in">
-                  <div className="p-3 border-b border-border">
-                    <h3 className="font-semibold text-sm">Notifications</h3>
-                  </div>
-                  <div className="max-h-64 overflow-auto">
-                    {sampleNotifications.slice(0, 4).map(n => (
-                      <div key={n.id} className={`p-3 border-b border-border/50 hover:bg-muted/50 transition-colors ${!n.read ? 'bg-primary/5' : ''}`}>
-                        <p className="text-sm font-medium">{n.title}</p>
-                        <p className="text-xs text-muted-foreground mt-0.5">{n.description}</p>
-                        <p className="text-xs text-muted-foreground mt-1">{n.timestamp}</p>
-                      </div>
-                    ))}
-                  </div>
-                  <Link to="/dashboard/notifications" onClick={() => setNotifDropdown(false)} className="block p-3 text-center text-sm text-primary font-medium hover:bg-muted/50">
-                    View All
-                  </Link>
-                </div>
-              )}
+              
+              <AnimatePresence>
+                {notifDropdown && (
+                  <motion.div 
+                    initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                    className="absolute right-0 top-14 w-80 bg-white dark:bg-card border border-gray-100 dark:border-border rounded-2xl shadow-2xl z-50 overflow-hidden"
+                  >
+                    <div className="p-4 border-b border-gray-50 dark:border-border flex items-center justify-between">
+                      <h3 className="font-bold text-base">Notifications</h3>
+                      <span className="text-[10px] bg-primary/10 text-primary px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">New</span>
+                    </div>
+                    <div className="max-h-[320px] overflow-auto custom-scrollbar">
+                      {sampleNotifications.slice(0, 4).map(n => (
+                        <div key={n.id} className={`p-4 border-b border-gray-50 dark:border-border/50 hover:bg-gray-50/80 dark:hover:bg-muted/30 transition-colors cursor-pointer ${!n.read ? 'bg-primary/[0.02]' : ''}`}>
+                          <p className="text-sm font-semibold leading-tight">{n.title}</p>
+                          <p className="text-xs text-muted-foreground mt-1.5 line-clamp-2">{n.description}</p>
+                          <p className="text-[10px] font-medium text-muted-foreground/60 mt-2 uppercase tracking-wide">{n.timestamp}</p>
+                        </div>
+                      ))}
+                    </div>
+                    <Link to="/dashboard/notifications" onClick={() => setNotifDropdown(false)} className="block p-4 text-center text-sm text-primary font-bold hover:bg-gray-50 dark:hover:bg-muted/50 transition-colors">
+                      View All Activity
+                    </Link>
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </div>
 
             {/* Profile */}
             <div className="relative">
-              <button onClick={() => { setProfileDropdown(!profileDropdown); setNotifDropdown(false); }} className="flex items-center gap-2 p-1.5 rounded-lg hover:bg-muted transition-colors">
-                <img src={user?.avatar} alt={user?.name} className="w-8 h-8 rounded-full object-cover" />
-                <span className="text-sm font-medium hidden sm:block">{user?.name}</span>
-                <ChevronDown className="w-4 h-4 text-muted-foreground hidden sm:block" />
-              </button>
-              {profileDropdown && (
-                <div className="absolute right-0 top-12 w-48 bg-card border border-border rounded-xl shadow-xl z-50 animate-scale-in">
-                  <div className="p-3 border-b border-border">
-                    <p className="text-sm font-medium">{user?.name}</p>
-                    <p className="text-xs text-muted-foreground capitalize">{user?.role}</p>
-                  </div>
-                  <Link to="/dashboard/profile" onClick={() => setProfileDropdown(false)} className="flex items-center gap-2 p-3 text-sm hover:bg-muted/50 transition-colors">
-                    <UserCircle className="w-4 h-4" /> Profile
-                  </Link>
-                  <Link to="/dashboard/settings" onClick={() => setProfileDropdown(false)} className="flex items-center gap-2 p-3 text-sm hover:bg-muted/50 transition-colors">
-                    <Settings className="w-4 h-4" /> Settings
-                  </Link>
-                  <button onClick={handleLogout} className="flex items-center gap-2 p-3 text-sm hover:bg-muted/50 transition-colors w-full text-destructive">
-                    <LogOut className="w-4 h-4" /> Sign Out
-                  </button>
+              <button 
+                onClick={() => { setProfileDropdown(!profileDropdown); setNotifDropdown(false); }} 
+                className={`flex items-center gap-3 p-1.5 pr-3 rounded-xl transition-all duration-300 ${profileDropdown ? 'bg-gray-100 dark:bg-muted' : 'hover:bg-gray-50 dark:hover:bg-muted'}`}
+              >
+                <div className="relative">
+                  <img src={user?.avatar} alt={user?.name} className="w-9 h-9 rounded-full object-cover ring-2 ring-white dark:ring-card shadow-sm" />
+                  <div className="absolute bottom-0 right-0 w-2.5 h-2.5 bg-green-500 rounded-full ring-2 ring-white dark:ring-card" />
                 </div>
-              )}
+                <div className="text-left hidden md:block">
+                  <p className="text-sm font-bold leading-none">{user?.name}</p>
+                  <p className="text-[10px] font-semibold text-muted-foreground uppercase tracking-wider mt-1">{user?.role}</p>
+                </div>
+                <ChevronDown className={`w-4 h-4 text-muted-foreground transition-transform duration-300 ${profileDropdown ? 'rotate-180' : ''}`} />
+              </button>
+              
+              <AnimatePresence>
+                {profileDropdown && (
+                  <motion.div 
+                    initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                    className="absolute right-0 top-14 w-56 bg-white dark:bg-card border border-gray-100 dark:border-border rounded-2xl shadow-2xl z-50 p-2"
+                  >
+                    <Link to="/dashboard/profile" onClick={() => setProfileDropdown(false)} className="flex items-center gap-3 p-3 text-sm font-semibold hover:bg-gray-50 dark:hover:bg-muted transition-all rounded-xl">
+                      <div className="p-2 bg-primary/10 rounded-lg text-primary"><UserCircle className="w-4.5 h-4.5" /></div> Profile Settings
+                    </Link>
+                    <Link to="/dashboard/settings" onClick={() => setProfileDropdown(false)} className="flex items-center gap-3 p-3 text-sm font-semibold hover:bg-gray-50 dark:hover:bg-muted transition-all rounded-xl">
+                      <div className="p-2 bg-secondary/10 rounded-lg text-secondary"><Settings className="w-4.5 h-4.5" /></div> Account Preferences
+                    </Link>
+                    <div className="my-2 border-t border-gray-50 dark:border-border/50" />
+                    <button onClick={handleLogout} className="flex items-center gap-3 p-3 text-sm font-semibold hover:bg-destructive/10 text-destructive transition-all rounded-xl w-full">
+                      <div className="p-2 bg-destructive/10 rounded-lg"><LogOut className="w-4.5 h-4.5" /></div> Sign Out
+                    </button>
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </div>
           </div>
         </header>
 
         {/* Page content */}
-        <main className="flex-1 overflow-auto p-4 lg:p-6">
+        <main className="flex-1 overflow-y-auto p-6 lg:p-10 custom-scrollbar">
           <Outlet />
         </main>
       </div>
