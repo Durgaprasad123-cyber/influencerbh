@@ -159,7 +159,7 @@ export function generateInfluencers(): Influencer[] {
     {
       id: "tarun-kumar",
       name: "Tarun Kumar",
-      avatar: "/creators/tarun kumar.jpg",
+      avatar: "/creators/tarun kumar.png",
       city: "Hyderabad",
       niche: "Fitness",
       followers: 320000,
@@ -197,7 +197,7 @@ export function generateInfluencers(): Influencer[] {
     {
       id: "sravan-sai",
       name: "Sravan Sai",
-      avatar: "/creators/sravan sai.jpg",
+      avatar: "/creators/sravan sai.png",
       city: "Hyderabad",
       niche: "Fitness",
       followers: 280000,
@@ -216,7 +216,7 @@ export function generateInfluencers(): Influencer[] {
     {
       id: "mallika-raghavender",
       name: "Mallika Raghavender",
-      avatar: "/creators/Mallika Raghavender.jpg",
+      avatar: "/creators/Mallika Raghavender.png",
       city: "Hyderabad",
       niche: "Fitness",
       followers: 650000,
@@ -313,7 +313,7 @@ export function generateInfluencers(): Influencer[] {
     {
       id: "ajay-hanumanthu",
       name: "Ajay Hanumanthu",
-      avatar: "/creators/aye jude.jpg",
+      avatar: "/creators/top100/aye-dude.jpg",
       city: "Hyderabad",
       niche: "Fashion",
       followers: 1200000,
@@ -372,7 +372,7 @@ export function generateInfluencers(): Influencer[] {
     {
       id: "keerthi-raaz",
       name: "Keerthi Raaz",
-      avatar: "/creators/keerthi raaz.jpg",
+      avatar: "/creators/top100/keerthi-raz.jpg",
       city: "Hyderabad",
       niche: "Food",
       followers: 550000,
@@ -391,7 +391,7 @@ export function generateInfluencers(): Influencer[] {
     {
       id: "soulfulvlogs",
       name: "Soulful Vlogs",
-      avatar: "/creators/soulfulvlogs.jpg",
+      avatar: "/creators/top100/soulful.jpg",
       city: "Hyderabad",
       niche: "Food",
       followers: 480000,
@@ -465,25 +465,6 @@ export function generateInfluencers(): Influencer[] {
       ],
       pastBrands: ["Santoor", "Sprite"],
       reviews: [{ clientName: "Vikram Reddy", rating: 5, comment: "The King of entertainment!", date: "2025-12-10" }]
-    },
-    {
-      id: "demon-pavan",
-      name: "Demon Pavan",
-      avatar: "/creators/demon-pavan-chat.jpg",
-      city: "Hyderabad",
-      niche: "Gaming",
-      followers: 1200000,
-      rating: 4.8,
-      bio: "Demon Pavan - Top gaming content creator and streamer. Known for high-energy gameplay and entertaining commentary.",
-      languages: ["Telugu", "English"],
-      audienceType: "Gen Z",
-      region: "South India",
-      socialLinks: [
-        { platform: "YouTube", url: "https://youtube.com/@demonpavan", handle: "Demon Pavan" },
-        { platform: "Instagram", url: "https://www.instagram.com/demonpavan", handle: "@demonpavan" }
-      ],
-      pastBrands: ["Asus ROG", "Monster Energy"],
-      reviews: []
     },
     {
       id: "gnaneswar-kumar",
@@ -638,51 +619,998 @@ export function generateInfluencers(): Influencer[] {
       ],
       pastBrands: ["Himalaya", "Sugar Cosmetics"],
       reviews: []
+    },
+
+    // --- TOP 100 (ADDED) ---
+    {
+      id: "raju-kanneboina",
+      name: "Raju Kanneboina",
+      avatar: "/creators/top100/raju.jpg",
+      city: "Hyderabad",
+      niche: "Comedy",
+      followers: 380000,
+      rating: 4.7,
+      bio: "Telugu comedy and entertainment creator known for relatable sketches and fun vlogs.",
+      languages: ["Telugu", "English"],
+      audienceType: "Gen Z",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "https://youtube.com/@rajukanneboina?si=47tI0f-4Nl5loLMA", handle: "@rajukanneboina" },
+        { platform: "Instagram", url: "https://www.instagram.com/rajukanneboina?igsh=MnJhYzM4ZW9kOHpm", handle: "@rajukanneboina" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "sneha-panda",
+      name: "Sneha Panda",
+      avatar: "/creators/top100/the-glutton-journal.jpg",
+      city: "Hyderabad",
+      niche: "Food",
+      followers: 420000,
+      rating: 4.7,
+      bio: "Food reviewer and storyteller behind The Glutton Journal, sharing cafe hops, recipes, and local food finds.",
+      languages: ["English", "Telugu"],
+      audienceType: "Millennials",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "https://youtube.com/@thegluttonjournal?si=eJMt1-ikBjeIck6X", handle: "@thegluttonjournal" },
+        { platform: "Instagram", url: "https://www.instagram.com/thegluttonjournal?igsh=NHZ6MGhrNmIxZmF5", handle: "@thegluttonjournal" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "nidhis-food-and-travel",
+      name: "Nidhis Food And Travel",
+      avatar: "/creators/top100/nidhi.jpg",
+      city: "Hyderabad",
+      niche: "Travel",
+      followers: 360000,
+      rating: 4.6,
+      bio: "Travel and food creator featuring budget-friendly itineraries, hotel reviews, and authentic eats across India.",
+      languages: ["English", "Telugu"],
+      audienceType: "Travelers",
+      region: "India",
+      socialLinks: [
+        { platform: "YouTube", url: "https://youtube.com/@nidhisfoodandtravel?si=0n9sAW_8bw5Qb5QV", handle: "@nidhisfoodandtravel" },
+        { platform: "Instagram", url: "https://www.instagram.com/nidhisfoodandtravel?igsh=OTJ6cGJhOXFybGpl", handle: "@nidhisfoodandtravel" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "er-yamini",
+      name: "ER Yamini",
+      avatar: "/creators/top100/er-yamini.jpg",
+      city: "Hyderabad",
+      niche: "Lifestyle",
+      followers: 520000,
+      rating: 4.7,
+      bio: "Lifestyle creator sharing everyday vlogs, personal growth, and positive routines.",
+      languages: ["Telugu", "English"],
+      audienceType: "Gen Z",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "https://youtube.com/@eryamini?si=REE7rAucX1gRP1uS", handle: "@eryamini" },
+        { platform: "Instagram", url: "https://www.instagram.com/yamini.e.r?igsh=MTlnNDNxanMzcXR4aA==", handle: "@yamini.e.r" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "ramya-sree",
+      name: "Ramya Sree",
+      avatar: "/creators/top100/ramya-sri-jpg-1.jpg",
+      city: "Hyderabad",
+      niche: "Lifestyle",
+      followers: 440000,
+      rating: 4.6,
+      bio: "Lifestyle and beauty creator known for reels, styling, and daily vlogs.",
+      languages: ["Telugu", "English"],
+      audienceType: "Women 18-35",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "https://youtube.com/@ramyasree14?si=QvBPaKwu9Po5WlUz", handle: "@ramyasree14" },
+        { platform: "Instagram", url: "https://www.instagram.com/devilic_cutie_?igsh=MW1oaWtxempibm9iOQ==", handle: "@devilic_cutie_" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "preethi-priya",
+      name: "Preethi Priya",
+      avatar: "/creators/top100/preethi-priya-jpg-1.jpg",
+      city: "Hyderabad",
+      niche: "Lifestyle",
+      followers: 410000,
+      rating: 4.6,
+      bio: "Lifestyle influencer creating short-form content across fashion, trends, and everyday moments.",
+      languages: ["Telugu", "English"],
+      audienceType: "Gen Z",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "https://youtube.com/@preeethipriyaofficial4467?si=8bVpSAafhzg4ml-i", handle: "@preeethipriyaofficial4467" },
+        { platform: "Instagram", url: "https://www.instagram.com/preethipriya926?igsh=aHcwZGZ5ZW5yc3py", handle: "@preethipriya926" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "abhinav-lifestyle",
+      name: "Abhinav Lifestyle",
+      avatar: "/creators/top100/abhinav.jpg",
+      city: "Hyderabad",
+      niche: "Fitness",
+      followers: 490000,
+      rating: 4.7,
+      bio: "Fitness and lifestyle creator sharing workouts, transformation tips, and motivational content.",
+      languages: ["Telugu", "English"],
+      audienceType: "Fitness Enthusiasts",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "https://youtube.com/@de_abhinav?si=9eQ1FGqnlddq84-Q", handle: "@de_abhinav" },
+        { platform: "Instagram", url: "https://www.instagram.com/abhinavfitness?igsh=ZDh1NzgyeXU3ajdh", handle: "@abhinavfitness" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "vaishnavi-chaitanya",
+      name: "Vaishnavi Chaitanya",
+      avatar: "/creators/top100/vaishnavi.jpg",
+      city: "Hyderabad",
+      niche: "Lifestyle",
+      followers: 620000,
+      rating: 4.8,
+      bio: "Lifestyle creator sharing fashion, daily vlogs, and relatable content for young audiences.",
+      languages: ["Telugu", "English"],
+      audienceType: "Gen Z",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "https://youtube.com/@iamvaishnavi_chaitanya?si=Ti_GqmFJ7DnMXyuU", handle: "@iamvaishnavi_chaitanya" },
+        { platform: "Instagram", url: "https://www.instagram.com/vaishnavi_chaitanya_?igsh=ZWs4M29xd2U5dW11", handle: "@vaishnavi_chaitanya_" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "geethu-royal",
+      name: "Geethu Royal",
+      avatar: "/creators/top100/geethu-royal.jpg",
+      city: "Hyderabad",
+      niche: "Lifestyle",
+      followers: 380000,
+      rating: 4.6,
+      bio: "Creator focused on lifestyle content, fashion picks, and fun daily vlogs.",
+      languages: ["Telugu", "English"],
+      audienceType: "Millennials",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "https://youtube.com/@geeturoyal_?si=NZf3r1NCw48wdtg8", handle: "@geeturoyal_" },
+        { platform: "Instagram", url: "https://www.instagram.com/geeturoyal_?igsh=ZzcwZndkdzFocDJ4", handle: "@geeturoyal_" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "nikhil-vijayendra",
+      name: "Nikhil Vijayendra",
+      avatar: "/creators/top100/nikhil-vijayendra-simha.jpg",
+      city: "Hyderabad",
+      niche: "Lifestyle",
+      followers: 340000,
+      rating: 4.5,
+      bio: "Lifestyle creator sharing vlogs, personal style, and pop-culture commentary.",
+      languages: ["English", "Telugu"],
+      audienceType: "Gen Z",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "https://youtube.com/@nikhiluuuuuuuuuuuu?si=PPzadS2-K-Zlfiwu", handle: "@nikhiluuuuuuuuuuuu" },
+        { platform: "Instagram", url: "https://www.instagram.com/nikhilvijayendrasimha?igsh=MXc1ZGZkMTQzbTA3dQ==", handle: "@nikhilvijayendrasimha" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "prasadtechintelugu",
+      name: "Prasadtechintelugu",
+      avatar: "/creators/top100/prasadtechintelugu.jpg",
+      city: "Hyderabad",
+      niche: "Tech",
+      followers: 980000,
+      rating: 4.8,
+      bio: "Tech creator known for gadget reviews, smartphone updates, and easy-to-understand Telugu tech content.",
+      languages: ["Telugu", "English"],
+      audienceType: "Professionals",
+      region: "India",
+      socialLinks: [
+        { platform: "YouTube", url: "https://youtube.com/@prasadtechintelugu?si=Bilv6xKF3QDDvRIT", handle: "@prasadtechintelugu" },
+        { platform: "Instagram", url: "https://www.instagram.com/prasadtechinshortsunofficial?igsh=N2VldXh2eWh5eTEz", handle: "@prasadtechinshortsunofficial" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "siddarth-varma",
+      name: "Siddharth Varma (sidshnu)",
+      avatar: "/creators/top100/siddarthvarma.jpg",
+      city: "Hyderabad",
+      niche: "Lifestyle",
+      followers: 360000,
+      rating: 4.6,
+      bio: "Lifestyle creator and performer sharing entertaining shorts, vlogs, and trend content.",
+      languages: ["Telugu", "English"],
+      audienceType: "Gen Z",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "https://youtube.com/@sidshnuofficial?si=LDy38U8o_H4i-vDS", handle: "@sidshnuofficial" },
+        { platform: "Instagram", url: "https://www.instagram.com/siddhardhvarma_official?igsh=aHhtY3M4cnJvYXo3", handle: "@siddhardhvarma_official" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "shravan-kotha",
+      name: "Shravan Kotha",
+      avatar: "/creators/top100/shravan-kotha.jpg",
+      city: "Hyderabad",
+      niche: "Lifestyle",
+      followers: 420000,
+      rating: 4.6,
+      bio: "Lifestyle creator sharing travel snippets, routines, and entertaining daily vlogs.",
+      languages: ["Telugu", "English"],
+      audienceType: "Millennials",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "https://youtube.com/@shravankotha?si=a9ACxsUtS3FjLWuM", handle: "@shravankotha" },
+        { platform: "Instagram", url: "https://www.instagram.com/shravan.kotha?igsh=Y3ptOWVvY25iNDFk", handle: "@shravan.kotha" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "sowmya-says",
+      name: "Sowmya Says",
+      avatar: "/creators/top100/sowmya-says.jpg",
+      city: "Hyderabad",
+      niche: "Lifestyle",
+      followers: 310000,
+      rating: 4.5,
+      bio: "Lifestyle creator sharing tips, relatable moments, and short-form content with a fun vibe.",
+      languages: ["Telugu", "English"],
+      audienceType: "Gen Z",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "https://youtube.com/@sowmyasayss07?si=F0fgIGzGJusyT_AW", handle: "@sowmyasayss07" },
+        { platform: "Instagram", url: "https://www.instagram.com/sowmya_sayss?igsh=MTBtN2luM2MwMHZzag==", handle: "@sowmya_sayss" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "niha-sisters",
+      name: "Niha Sisters",
+      avatar: "/creators/top100/neha-sisters.jpg",
+      city: "Hyderabad",
+      niche: "Lifestyle",
+      followers: 520000,
+      rating: 4.7,
+      bio: "Sisters creating lifestyle content, trends, and fun vlogs.",
+      languages: ["Telugu", "English"],
+      audienceType: "Gen Z",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "https://youtube.com/@nihasisters?si=AmB2M-dul-plXotD", handle: "@nihasisters" },
+        { platform: "Instagram", url: "https://www.instagram.com/niharika_platinum?igsh=MXEyeWZuMmYxanp2bg==", handle: "@niharika_platinum" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "vr-raja",
+      name: "Vr Raja",
+      avatar: "/creators/top100/vr-raja.jpg",
+      city: "Hyderabad",
+      niche: "Lifestyle",
+      followers: 410000,
+      rating: 4.6,
+      bio: "Lifestyle and entertainment creator sharing trendy reels and energetic vlogs.",
+      languages: ["Telugu", "English"],
+      audienceType: "Gen Z",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "https://youtube.com/@iamvrraja?si=zLeGkBOqXx6hCX9X", handle: "@iamvrraja" },
+        { platform: "Instagram", url: "https://www.instagram.com/iamvrraja?igsh=MXZwb20xcGFnbm41OQ==", handle: "@iamvrraja" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "food-on-farm",
+      name: "Food on Farm",
+      avatar: "/creators/top100/food-on-farms.jpg",
+      city: "Hyderabad",
+      niche: "Food",
+      followers: 260000,
+      rating: 4.6,
+      bio: "Farm-to-table food content featuring fresh ingredients, cooking, and rustic food experiences.",
+      languages: ["Telugu", "English"],
+      audienceType: "Parents",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "https://youtube.com/@foodonfarm?si=g_1s0Lx_MxTBctwj", handle: "@foodonfarm" },
+        { platform: "Instagram", url: "https://www.instagram.com/foodonfarm?igsh=b2xucXNiYWVtd29t", handle: "@foodonfarm" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "swaroop-talks",
+      name: "Swaroop Talks",
+      avatar: "/creators/top100/swaroop.jpg",
+      city: "Hyderabad",
+      niche: "Education",
+      followers: 220000,
+      rating: 4.5,
+      bio: "Talks and interviews on careers, life, and learning with practical takeaways.",
+      languages: ["Telugu", "English"],
+      audienceType: "Students",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "https://youtube.com/@swaroopvitb?si=xJatEu18u7De3u8K", handle: "@swaroopvitb" },
+        { platform: "Instagram", url: "https://www.instagram.com/raw_talks_with_swaroop?igsh=N3B3dTY5ajl4NGpm", handle: "@raw_talks_with_swaroop" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "tejaswini-gowda",
+      name: "Tejaswini Gowda",
+      avatar: "/creators/top100/tejaswini-gowda.jpg",
+      city: "Hyderabad",
+      niche: "Lifestyle",
+      followers: 740000,
+      rating: 4.8,
+      bio: "Lifestyle creator sharing trend content, fashion, and daily vlogs.",
+      languages: ["Telugu", "English"],
+      audienceType: "Women 18-35",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "https://youtube.com/@tejaswini_gowda?si=jRU8V5x7Czv5P6O4", handle: "@tejaswini_gowda" },
+        { platform: "Instagram", url: "https://www.instagram.com/_tejaswini_gowda_official?igsh=MWpreG9sOHI3cm1mNw==", handle: "@_tejaswini_gowda_official" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "amardeep-chowdary",
+      name: "Amardeep Chowdary",
+      avatar: "/creators/top100/amardeep.png",
+      city: "Hyderabad",
+      niche: "Lifestyle",
+      followers: 560000,
+      rating: 4.7,
+      bio: "Creator sharing lifestyle content and entertaining vlogs for Telugu audiences.",
+      languages: ["Telugu", "English"],
+      audienceType: "Gen Z",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "https://youtube.com/@amardeeprajathegreat?si=gqUtrerlT_RY1tNI", handle: "@amardeeprajathegreat" },
+        { platform: "Instagram", url: "https://www.instagram.com/amardeep_chowdary?igsh=Z3Jscm0xaWtlOHN1", handle: "@amardeep_chowdary" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "prerana-kambam",
+      name: "Prerana Kambam Official",
+      avatar: "/creators/top100/prerana.jpg",
+      city: "Hyderabad",
+      niche: "Lifestyle",
+      followers: 420000,
+      rating: 4.6,
+      bio: "Lifestyle creator sharing vlogs, reels, and trend content.",
+      languages: ["Telugu", "English"],
+      audienceType: "Gen Z",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "https://youtube.com/@preranakambamofficial?si=7ndd30Om4Aa8J4Rn", handle: "@preranakambamofficial" },
+        { platform: "Instagram", url: "https://www.instagram.com/prerana.kambam?igsh=MTJhamdyb3F3YXliMg==", handle: "@prerana.kambam" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "nainika-anasuru",
+      name: "Nainika Anasuru",
+      avatar: "/creators/top100/nainika.jpg",
+      city: "Hyderabad",
+      niche: "Lifestyle",
+      followers: 310000,
+      rating: 4.5,
+      bio: "Lifestyle creator sharing reels, vlogs, and relatable trend content.",
+      languages: ["Telugu", "English"],
+      audienceType: "Gen Z",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "https://youtube.com/@nainikaanasuruofficial468?si=EuqjIwErli5FwioM", handle: "@nainikaanasuruofficial468" },
+        { platform: "Instagram", url: "https://www.instagram.com/nainika.anasuru26?igsh=ajI3dXAxbTQ2bnRv", handle: "@nainika.anasuru26" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "sushma-gopal",
+      name: "Sushma Gopal",
+      avatar: "/creators/top100/sushma-gopal.jpg",
+      city: "Hyderabad",
+      niche: "Lifestyle",
+      followers: 340000,
+      rating: 4.6,
+      bio: "Lifestyle creator sharing daily vlogs, fashion moments, and trend content.",
+      languages: ["Telugu", "English"],
+      audienceType: "Women 18-35",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "https://youtube.com/@sushma_gopal?si=_mdq1HnRhCs81wAF", handle: "@sushma_gopal" },
+        { platform: "Instagram", url: "https://www.instagram.com/sushma_gopal__?igsh=Nmc2eDR3cnp6M2Jx", handle: "@sushma_gopal__" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "vandana-warangal",
+      name: "Vandana Warangal",
+      avatar: "/creators/top100/warangal-vandana.jpg",
+      city: "Warangal",
+      niche: "Lifestyle",
+      followers: 280000,
+      rating: 4.5,
+      bio: "Lifestyle creator sharing vlogs and trend content with a strong local connect.",
+      languages: ["Telugu", "English"],
+      audienceType: "Millennials",
+      region: "Telangana",
+      socialLinks: [
+        { platform: "YouTube", url: "https://youtube.com/@vandanaoff?si=gLBqugWle66EneO1", handle: "@vandanaoff" },
+        { platform: "Instagram", url: "https://www.instagram.com/aishwarya.govardan?igsh=MXdoM3IzM2dsYnA3Yg==", handle: "@aishwarya.govardan" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "sumi-talks",
+      name: "Sumi Talks",
+      avatar: "/creators/top100/sumi.jpg",
+      city: "Hyderabad",
+      niche: "Lifestyle",
+      followers: 260000,
+      rating: 4.5,
+      bio: "Talks and short-form content with lifestyle topics and relatable moments.",
+      languages: ["Telugu", "English"],
+      audienceType: "Gen Z",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "https://youtube.com/@sumiitalks?si=UNS-iAybiW_xcwmH", handle: "@sumiitalks" },
+        { platform: "Instagram", url: "https://www.instagram.com/sumii_talks?igsh=NTl4MWwwcDBiOXVy", handle: "@sumii_talks" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "riya-manoj",
+      name: "Riya Manoj",
+      avatar: "/creators/top100/riya-manoj.jpg",
+      city: "Hyderabad",
+      niche: "Lifestyle",
+      followers: 380000,
+      rating: 4.6,
+      bio: "Lifestyle creator sharing daily vlogs, trends, and fun reels.",
+      languages: ["Telugu", "English"],
+      audienceType: "Gen Z",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "https://youtube.com/@riyaann?si=Z6xxa6cxC-TPKwVL", handle: "@riyaann" },
+        { platform: "Instagram", url: "https://www.instagram.com/riyamanoj?igsh=bG1rN3UxajUwdTN0", handle: "@riyamanoj" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "jogipet-ratnam",
+      name: "Jogipet Ratnam",
+      avatar: "/creators/top100/jogipeta-ratnam.jpg",
+      city: "Hyderabad",
+      niche: "Comedy",
+      followers: 460000,
+      rating: 4.7,
+      bio: "Comedy creator delivering relatable Telugu humor and entertaining short videos.",
+      languages: ["Telugu", "English"],
+      audienceType: "Family",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "https://youtube.com/@jogipetratnam?si=gz3khj9AhG9Oc2k8", handle: "@jogipetratnam" },
+        { platform: "Instagram", url: "https://www.instagram.com/jogipet_ratnam?igsh=MXF1YzUzeW9xc2dpdA==", handle: "@jogipet_ratnam" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "shettyxvibe",
+      name: "Shettyxvibe",
+      avatar: "/creators/top100/shetty.jpg",
+      city: "Hyderabad",
+      niche: "Lifestyle",
+      followers: 300000,
+      rating: 4.5,
+      bio: "Lifestyle and fitness-forward content with vlogs, reels, and energetic edits.",
+      languages: ["Telugu", "English"],
+      audienceType: "Gen Z",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "https://youtube.com/@hrithik_shetty?si=wtuoR4DkSa_d2jp7", handle: "@hrithik_shetty" },
+        { platform: "Instagram", url: "https://www.instagram.com/shettyxvibe?igsh=MW01ZmlpMzZuNWsyNg==", handle: "@shettyxvibe" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "akhil",
+      name: "Akhil",
+      avatar: "/creators/top100/akhil.jpg",
+      city: "Hyderabad",
+      niche: "Lifestyle",
+      followers: 220000,
+      rating: 4.5,
+      bio: "Lifestyle creator sharing daily vlogs, trends, and relatable moments.",
+      languages: ["Telugu", "English"],
+      audienceType: "Gen Z",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "#", handle: "Akhil" },
+        { platform: "Instagram", url: "#", handle: "@akhil" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "akshaya-reddy",
+      name: "Akshaya Reddy",
+      avatar: "/creators/top100/akshaya-reddy.jpg",
+      city: "Hyderabad",
+      niche: "Fashion",
+      followers: 310000,
+      rating: 4.6,
+      bio: "Fashion and lifestyle creator sharing styling tips, outfits, and trend content.",
+      languages: ["Telugu", "English"],
+      audienceType: "Women 18-35",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "#", handle: "Akshaya Reddy" },
+        { platform: "Instagram", url: "#", handle: "@akshaya" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "alekhya-harika",
+      name: "Alekhya Harika",
+      avatar: "/creators/top100/alekhya-harika.jpg",
+      city: "Hyderabad",
+      niche: "Lifestyle",
+      followers: 260000,
+      rating: 4.5,
+      bio: "Lifestyle content focused on routines, travel snippets, and fun short videos.",
+      languages: ["Telugu", "English"],
+      audienceType: "Gen Z",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "#", handle: "Alekhya Harika" },
+        { platform: "Instagram", url: "#", handle: "@alekhya" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "ashtrixx",
+      name: "Ashtrixx",
+      avatar: "/creators/top100/ashtrixx.jpg",
+      city: "Hyderabad",
+      niche: "Gaming",
+      followers: 390000,
+      rating: 4.6,
+      bio: "Gaming creator known for entertaining gameplay, reactions, and community streams.",
+      languages: ["Telugu", "English"],
+      audienceType: "Gen Z",
+      region: "India",
+      socialLinks: [
+        { platform: "YouTube", url: "#", handle: "Ashtrixx" },
+        { platform: "Instagram", url: "#", handle: "@ashtrixx" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "bindhu-madhavi",
+      name: "Bindhu Madhavi",
+      avatar: "/creators/top100/bindhu-madhavi.jpg",
+      city: "Hyderabad",
+      niche: "Lifestyle",
+      followers: 280000,
+      rating: 4.6,
+      bio: "Lifestyle creator sharing family-friendly content, routines, and everyday moments.",
+      languages: ["Telugu", "English"],
+      audienceType: "Family",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "#", handle: "Bindhu Madhavi" },
+        { platform: "Instagram", url: "#", handle: "@bindhumadhavi" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "deepthi-sunaina",
+      name: "Deepthi Sunaina",
+      avatar: "/creators/top100/deepthi-sunaina.jpg",
+      city: "Hyderabad",
+      niche: "Beauty",
+      followers: 520000,
+      rating: 4.7,
+      bio: "Beauty and lifestyle creator sharing makeup looks, skincare routines, and daily vlogs.",
+      languages: ["Telugu", "English"],
+      audienceType: "Women 18-35",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "#", handle: "Deepthi Sunaina" },
+        { platform: "Instagram", url: "#", handle: "@deepthisunaina" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "dhanush",
+      name: "Dhanush",
+      avatar: "/creators/top100/dhanush.jpg",
+      city: "Hyderabad",
+      niche: "Fitness",
+      followers: 240000,
+      rating: 4.5,
+      bio: "Fitness creator sharing workout routines, motivation, and lifestyle content.",
+      languages: ["Telugu", "English"],
+      audienceType: "Fitness Enthusiasts",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "#", handle: "Dhanush" },
+        { platform: "Instagram", url: "#", handle: "@dhanush" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "dynamo",
+      name: "Dynamo",
+      avatar: "/creators/top100/dynamo.jpg",
+      city: "Hyderabad",
+      niche: "Tech",
+      followers: 320000,
+      rating: 4.6,
+      bio: "Tech creator sharing gadget content, short reviews, and practical tips.",
+      languages: ["Telugu", "English"],
+      audienceType: "Professionals",
+      region: "India",
+      socialLinks: [
+        { platform: "YouTube", url: "#", handle: "Dynamo" },
+        { platform: "Instagram", url: "#", handle: "@dynamo" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "harika",
+      name: "Harika",
+      avatar: "/creators/top100/harika.jpg",
+      city: "Hyderabad",
+      niche: "Lifestyle",
+      followers: 210000,
+      rating: 4.5,
+      bio: "Lifestyle creator sharing vlogs, fashion moments, and trend content.",
+      languages: ["Telugu", "English"],
+      audienceType: "Gen Z",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "#", handle: "Harika" },
+        { platform: "Instagram", url: "#", handle: "@harika" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "harsha-chemudu",
+      name: "Harsha Chemudu",
+      avatar: "/creators/top100/harsha-chemudu.jpg",
+      city: "Hyderabad",
+      niche: "Comedy",
+      followers: 680000,
+      rating: 4.8,
+      bio: "Comedy and entertainment creator known for humorous sketches and on-screen presence.",
+      languages: ["Telugu", "English"],
+      audienceType: "Family",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "#", handle: "Harsha Chemudu" },
+        { platform: "Instagram", url: "#", handle: "@harshachemudu" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "harsha",
+      name: "Harsha",
+      avatar: "/creators/top100/harsha.jpg",
+      city: "Hyderabad",
+      niche: "Comedy",
+      followers: 260000,
+      rating: 4.6,
+      bio: "Comedy creator sharing short skits, fun reels, and entertaining videos.",
+      languages: ["Telugu", "English"],
+      audienceType: "Gen Z",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "#", handle: "Harsha" },
+        { platform: "Instagram", url: "#", handle: "@harsha" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "madhuri-krishna",
+      name: "Madhuri Krishna",
+      avatar: "/creators/top100/madhuri-krishna.jpg",
+      city: "Hyderabad",
+      niche: "Lifestyle",
+      followers: 240000,
+      rating: 4.5,
+      bio: "Lifestyle creator sharing daily vlogs, fashion, and relatable content.",
+      languages: ["Telugu", "English"],
+      audienceType: "Millennials",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "#", handle: "Madhuri Krishna" },
+        { platform: "Instagram", url: "#", handle: "@madhuri" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "mahathalli",
+      name: "Mahathalli",
+      avatar: "/creators/top100/mahathalli.jpg",
+      city: "Hyderabad",
+      niche: "Comedy",
+      followers: 820000,
+      rating: 4.8,
+      bio: "Comedy creator known for relatable Telugu humor, skits, and entertaining reels.",
+      languages: ["Telugu", "English"],
+      audienceType: "Gen Z",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "#", handle: "Mahathalli" },
+        { platform: "Instagram", url: "#", handle: "@mahathalli" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "maheswari",
+      name: "Maheswari",
+      avatar: "/creators/top100/maheswari.jpg",
+      city: "Hyderabad",
+      niche: "Lifestyle",
+      followers: 230000,
+      rating: 4.5,
+      bio: "Lifestyle creator sharing fashion picks, routines, and everyday moments.",
+      languages: ["Telugu", "English"],
+      audienceType: "Women 18-35",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "#", handle: "Maheswari" },
+        { platform: "Instagram", url: "#", handle: "@maheswari" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "mou-living",
+      name: "Mou Living",
+      avatar: "/creators/top100/mou-living.jpg",
+      city: "Hyderabad",
+      niche: "Lifestyle",
+      followers: 190000,
+      rating: 4.5,
+      bio: "Lifestyle vlogger sharing home, travel snippets, and daily routines.",
+      languages: ["English", "Telugu"],
+      audienceType: "Millennials",
+      region: "India",
+      socialLinks: [
+        { platform: "YouTube", url: "#", handle: "Mou Living" },
+        { platform: "Instagram", url: "#", handle: "@mouliving" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "muna-bhai",
+      name: "Muna Bhai",
+      avatar: "/creators/top100/muna-bhai.jpg",
+      city: "Hyderabad",
+      niche: "Comedy",
+      followers: 340000,
+      rating: 4.6,
+      bio: "Comedy creator with fun characters and short-form entertainment videos.",
+      languages: ["Telugu", "English"],
+      audienceType: "Family",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "#", handle: "Muna Bhai" },
+        { platform: "Instagram", url: "#", handle: "@munabhai" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "nandhu",
+      name: "Nandhu",
+      avatar: "/creators/top100/nandhu.jpg",
+      city: "Hyderabad",
+      niche: "Lifestyle",
+      followers: 210000,
+      rating: 4.5,
+      bio: "Lifestyle creator sharing reels, vlogs, and daily moments.",
+      languages: ["Telugu", "English"],
+      audienceType: "Gen Z",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "#", handle: "Nandhu" },
+        { platform: "Instagram", url: "#", handle: "@nandhu" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "niharika",
+      name: "Niharika",
+      avatar: "/creators/top100/niharika.jpg",
+      city: "Hyderabad",
+      niche: "Lifestyle",
+      followers: 260000,
+      rating: 4.6,
+      bio: "Lifestyle creator sharing trendy reels, short vlogs, and fun content.",
+      languages: ["Telugu", "English"],
+      audienceType: "Gen Z",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "#", handle: "Niharika" },
+        { platform: "Instagram", url: "#", handle: "@niharika" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "sai-prasanna",
+      name: "Sai Prasanna",
+      avatar: "/creators/top100/sai-prasanna.jpg",
+      city: "Hyderabad",
+      niche: "Lifestyle",
+      followers: 180000,
+      rating: 4.5,
+      bio: "Lifestyle creator sharing relatable content, routines, and short vlogs.",
+      languages: ["Telugu", "English"],
+      audienceType: "Gen Z",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "#", handle: "Sai Prasanna" },
+        { platform: "Instagram", url: "#", handle: "@saiprasanna" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "shanmukh",
+      name: "Shanmukh",
+      avatar: "/creators/top100/shanmukh.jpg",
+      city: "Hyderabad",
+      niche: "Comedy",
+      followers: 720000,
+      rating: 4.8,
+      bio: "Comedy and storytelling creator known for entertaining sketches and web content.",
+      languages: ["Telugu", "English"],
+      audienceType: "Gen Z",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "#", handle: "Shanmukh" },
+        { platform: "Instagram", url: "#", handle: "@shanmukh" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "shiva-jyothi",
+      name: "Shiva Jyothi",
+      avatar: "/creators/top100/shiva-jyothi.jpg",
+      city: "Hyderabad",
+      niche: "Lifestyle",
+      followers: 200000,
+      rating: 4.5,
+      bio: "Lifestyle creator sharing routines, fashion moments, and everyday vlogs.",
+      languages: ["Telugu", "English"],
+      audienceType: "Millennials",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "#", handle: "Shiva Jyothi" },
+        { platform: "Instagram", url: "#", handle: "@shivajyothi" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "sirihanumanth",
+      name: "Siri Hanumanth",
+      avatar: "/creators/top100/sirihanumanth.jpg",
+      city: "Hyderabad",
+      niche: "Lifestyle",
+      followers: 300000,
+      rating: 4.6,
+      bio: "Lifestyle creator sharing daily vlogs, relatable content, and trend videos.",
+      languages: ["Telugu", "English"],
+      audienceType: "Gen Z",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "#", handle: "Siri Hanumanth" },
+        { platform: "Instagram", url: "#", handle: "@sirihanumanth" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "vismai",
+      name: "Vismai",
+      avatar: "/creators/top100/vismai.jpg",
+      city: "Hyderabad",
+      niche: "Food",
+      followers: 1200000,
+      rating: 4.9,
+      bio: "Food creator sharing recipes, cooking tips, and Telugu cuisine favorites.",
+      languages: ["Telugu", "English"],
+      audienceType: "Parents",
+      region: "India",
+      socialLinks: [
+        { platform: "YouTube", url: "#", handle: "Vismai" },
+        { platform: "Instagram", url: "#", handle: "@vismai" }
+      ],
+      pastBrands: [],
+      reviews: []
+    },
+    {
+      id: "vithika",
+      name: "Vithika",
+      avatar: "/creators/top100/vithika.jpg",
+      city: "Hyderabad",
+      niche: "Lifestyle",
+      followers: 260000,
+      rating: 4.6,
+      bio: "Lifestyle creator sharing fashion, wellness, and daily vlogs.",
+      languages: ["Telugu", "English"],
+      audienceType: "Women 18-35",
+      region: "South India",
+      socialLinks: [
+        { platform: "YouTube", url: "#", handle: "Vithika" },
+        { platform: "Instagram", url: "#", handle: "@vithika" }
+      ],
+      pastBrands: [],
+      reviews: []
     }
   ];
-
-  for (let i = 0; i < 75; i++) {
-    const firstName = firstNames[i % firstNames.length];
-    const lastName = lastNames[i % lastNames.length];
-    const name = `${firstName} ${lastName}`;
-    const city = indianCities[i % indianCities.length];
-    const niche = niches[i % niches.length];
-    const followers = Math.floor(Math.random() * 4900000) + 1000000;
-
-    influencers.push({
-      id: `inf-${i + 1}`,
-      name,
-      avatar: generateAvatar(name, i + 22),
-      city,
-      niche,
-      followers,
-      rating: parseFloat((3.5 + Math.random() * 1.5).toFixed(1)),
-      bio: `${name} is a popular ${niche.toLowerCase()} content creator from ${city}, known for engaging ${niche.toLowerCase()} content and brand collaborations across India.`,
-      languages: pickN(languages, 2 + Math.floor(Math.random() * 2)),
-      audienceType: pick(audienceTypes),
-      region: city,
-      socialLinks: [
-        { platform: 'Instagram', url: '#', handle: `@${firstName.toLowerCase()}${lastName.toLowerCase()}` },
-        { platform: 'YouTube', url: '#', handle: `${firstName} ${lastName}` },
-        { platform: 'Twitter', url: '#', handle: `@${firstName.toLowerCase()}_${lastName.toLowerCase().slice(0, 3)}` },
-      ],
-      pastBrands: pickN(brands, 3 + Math.floor(Math.random() * 4)),
-      reviews: [
-        {
-          clientName: `${pick(firstNames)} ${pick(lastNames)}`,
-          rating: parseFloat((4 + Math.random()).toFixed(1)),
-          comment: `Great collaboration with ${firstName}! Very professional and delivered amazing content on time.`,
-          date: '2025-12-15',
-        },
-        {
-          clientName: `${pick(firstNames)} ${pick(lastNames)}`,
-          rating: parseFloat((3.5 + Math.random() * 1.5).toFixed(1)),
-          comment: `${firstName} brought excellent creative ideas to our campaign. Highly recommended!`,
-          date: '2025-11-20',
-        },
-      ],
-    });
-  }
 
   return influencers;
 }
@@ -700,7 +1628,7 @@ export const sampleChatThreads: ChatThread[] = [
   {
     id: 'chat1',
     participantName: 'Demon Pavan',
-    participantAvatar: '/creators/demon-pavan-chat.jpg',
+    participantAvatar: '/creators/demon-pavan.webp',
     participantRole: 'client',
     lastMessage: 'Sure, I would love to collaborate on this campaign!',
     lastTimestamp: '2 min ago',
@@ -709,11 +1637,11 @@ export const sampleChatThreads: ChatThread[] = [
     lastSeen: 'Online',
     messages: [
       { id: 'm1', senderId: 'me', senderName: 'You', senderAvatar: '', text: 'Hi Demon Pavan! I loved your collection of Banarasi sarees. Would you be interested in a collaboration?', timestamp: '10:30 AM' },
-      { id: 'm2', senderId: 'demon-pavan', senderName: 'Demon Pavan', senderAvatar: '/creators/demon-pavan-chat.jpg', text: 'Thank you so much! I appreciate your interest. What kind of collaboration did you have in mind?', timestamp: '10:35 AM' },
+      { id: 'm2', senderId: 'demon-pavan', senderName: 'Demon Pavan', senderAvatar: '/creators/demon-pavan.webp', text: 'Thank you so much! I appreciate your interest. What kind of collaboration did you have in mind?', timestamp: '10:35 AM' },
       { id: 'm3', senderId: 'me', senderName: 'You', senderAvatar: '', text: 'I am launching a new heritage series and would like to feature your sarees in my next set of reels.', timestamp: '10:40 AM' },
-      { id: 'm4', senderId: 'demon-pavan', senderName: 'Demon Pavan', senderAvatar: '/creators/demon-pavan-chat.jpg', text: 'That sounds amazing! Our heritage weaves are perfect for that. Could you share more details about the budget and timeline?', timestamp: '10:45 AM' },
+      { id: 'm4', senderId: 'demon-pavan', senderName: 'Demon Pavan', senderAvatar: '/creators/demon-pavan.webp', text: 'That sounds amazing! Our heritage weaves are perfect for that. Could you share more details about the budget and timeline?', timestamp: '10:45 AM' },
       { id: 'm5', senderId: 'me', senderName: 'You', senderAvatar: '', text: 'Budget is ₹75,000 for the full package. We need the content live by next month.', timestamp: '10:50 AM' },
-      { id: 'm6', senderId: 'demon-pavan', senderName: 'Demon Pavan', senderAvatar: '/creators/demon-pavan-chat.jpg', text: 'Sure, I would love to collaborate on this campaign!', timestamp: '10:52 AM' },
+      { id: 'm6', senderId: 'demon-pavan', senderName: 'Demon Pavan', senderAvatar: '/creators/demon-pavan.webp', text: 'Sure, I would love to collaborate on this campaign!', timestamp: '10:52 AM' },
     ],
   },
   {
